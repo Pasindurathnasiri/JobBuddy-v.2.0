@@ -38,7 +38,7 @@
                   <ul class="dropdown-menu">
                     <li><a href="./stu_admin_panel.php">Student Details</a></li>
                     <li><a href="./vtc_admin_panel.php">Vocational Training Centre Details</a></li>
-                    <li><a href="./1.1RegCompany.php">Company Details</a></li>
+                    <li><a href="./com_admin_panel.php">Company Details</a></li>
                   </ul>
                 </li><li><a href="./ContactAll.php">Contact</a></li>
                 <!--Register-->
