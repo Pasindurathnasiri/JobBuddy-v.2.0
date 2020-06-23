@@ -45,8 +45,8 @@
                 contenteditable>'.$row["contactNoStu"].'</td>
                 <td class="edu_level" data_id7="'.$row["NICStu"].'" 
                 contenteditable>'.$row["eduLevelStu"].'</td>
-                <td><button name="btn_delete" id="btn_delete" 
-                data-id8="'.$row["NICStu"].'">X</button></td>
+                <td><button type="button" name="btn_delete" 
+                data-id8="'.$row["NICStu"].'" class="btn btn-xs btn-danger btn_delete">X</button></td>
                   
                 </tr>  
            ';  
@@ -61,8 +61,7 @@
                  <td id="district" contenteditable></td>
                  <td id="contact_no" contenteditable></td>
                  <td id="edu_level" contenteditable></td>
-                 <td><button name="btn_add" id="btn_add" class="btn btn-xs btn-success">+</button></td>
-           </tr>  
+                 </tr>  
       ';  
  }  
  else  
@@ -77,8 +76,7 @@
                      <td id="district" contenteditable></td>
                      <td id="contact_no" contenteditable></td>
                      <td id="edu_level" contenteditable></td>  
-	                  <td><button type="button" name="btn_add" id="btn_add" class="btn btn-xs btn-success">+</button></td>
-  
+	                 
 			   </tr>';  
  }  
  $output .= '</table>  
