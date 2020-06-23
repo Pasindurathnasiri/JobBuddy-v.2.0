@@ -42,8 +42,8 @@
                 contenteditable>'.$row["dir_fullName"].'</td>
                 <td class="contact_no" data_id6="'.$row["ComRegID"].'" 
                 contenteditable>'.$row["contact_No"].'</td>
-                <td><button name="btn_delete" id="btn_delete" 
-                data-id8="'.$row["ComRegID"].'">X</button></td>
+                <td><button type="button" name="btn_delete"  
+                data-id7="'.$row["ComRegID"].'" class="btn btn-xs btn-danger btn_delete">X</button></td>
                   
                 </tr>  
            ';  
