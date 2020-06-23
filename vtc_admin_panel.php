@@ -91,11 +91,12 @@ $(document).on('click', '#btn_add', function(){
         edit_data(id,last_name, "last_name");  
     }); 
     $(document).on('click', '.btn_delete', function(){  
-        var id=$(this).data("id3");  
+        var id=$(this).data("data_id8");  
+        console.log(id+"  Deleted");
         if(confirm("Are you sure you want to delete this?"))  
         {  
             $.ajax({  
-                url:"delete.php",  
+                url:"vtc_delete.php",  
                 method:"POST",  
                 data:{id:id},  
                 dataType:"text",  
