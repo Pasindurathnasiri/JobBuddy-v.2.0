@@ -43,7 +43,7 @@
                 <td class="contact_no" data_id6="'.$row["vtcRegID"].'" 
                 contenteditable>'.$row["contact_No"].'</td>
                 <td><button name="btn_delete" id="btn_delete" 
-                data-id8="'.$row["vtcRegID"].'">X</button></td>
+                data_id8="'.$row["vtcRegID"].'">X</button></td>
                   
                 </tr>  
            ';  
