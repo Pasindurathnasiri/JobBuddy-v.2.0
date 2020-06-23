@@ -30,20 +30,20 @@
            $output .= '  
                 <tr>  
                 <td>'.$row["vtcRegID"].'</td>
-                <td class="vtc_name" data_id1="'.$row["vtcRegID"].'" 
+                <td class="vtc_name" data-id1="'.$row["vtcRegID"].'" 
                 contenteditable>'.$row["vtcName"].'</td>
-                <td class="email" data_id2="'.$row["vtcRegID"].'" 
+                <td class="email" data-id2="'.$row["vtcRegID"].'" 
                 contenteditable>'.$row["vtc_Email"].'</td>
-                <td class="district" data_id3="'.$row["vtcRegID"].'" 
+                <td class="district" data-id3="'.$row["vtcRegID"].'" 
                 contenteditable>'.$row["district"].'</td>
-                <td class="address" data_id4="'.$row["vtcRegID"].'" 
+                <td class="address" data-id4="'.$row["vtcRegID"].'" 
                 contenteditable>'.$row["vtcAddress"].'</td>
-                <td class="dir_fullName" data_id5="'.$row["vtcRegID"].'" 
+                <td class="dir_fullName" data-id5="'.$row["vtcRegID"].'" 
                 contenteditable>'.$row["dir_fullName"].'</td>
-                <td class="contact_no" data_id6="'.$row["vtcRegID"].'" 
+                <td class="contact_no" data-id6="'.$row["vtcRegID"].'" 
                 contenteditable>'.$row["contact_No"].'</td>
-                <td><button name="btn_delete" id="btn_delete" 
-                data_id8="'.$row["vtcRegID"].'">X</button></td>
+                <td><button type="button" name="btn_delete"
+                data-id8="'.$row["vtcRegID"].'" class="btn btn-xs btn-danger btn_delete">X</button></td>
                   
                 </tr>  
            ';  
