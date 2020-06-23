@@ -91,8 +91,7 @@ $(document).on('click', '#btn_add', function(){
         edit_data(id,last_name, "last_name");  
     }); 
     $(document).on('click', '.btn_delete', function(){  
-        var id=$(this).data("data_id8");  
-        console.log(id+"  Deleted");
+        var id=$(this).data("id8");  
         if(confirm("Are you sure you want to delete this?"))  
         {  
             $.ajax({  
