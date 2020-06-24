@@ -43,7 +43,9 @@
                 <td class="contact_no" data_id6="'.$row["ComRegID"].'" 
                 contenteditable>'.$row["contact_No"].'</td>
                 <td><button type="button" name="btn_delete"  
-                data-id7="'.$row["ComRegID"].'" class="btn btn-xs btn-danger btn_delete">X</button></td>
+                data-id7="'.$row["ComRegID"].'" class="btn btn-xs btn-danger btn_delete">X</button>
+                <button type="button" name="btn_update"  
+                data-id8="'.$row["ComRegID"].'" class="btn btn-xs btn-primary btn_update">U</button></td>
                   
                 </tr>  
            ';  
