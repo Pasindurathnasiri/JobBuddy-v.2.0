@@ -110,16 +110,7 @@ $(document).on('click', '#btn_add', function(){
     $(document).on('click', '.btn_update', function(){  
         var id=$(this).data("id8");  
             window.location.href ="http://localhost/dashboard/JobBuddy%20v.2.0/com_update.php?id="+id;
-            // $.ajax({  
-            //     url:"com_update.php",  
-            //     method:"POST",  
-            //     data:{id:id},  
-            //     dataType:"text",  
-            //     success:function(data){  
-            //         alert(data);  
-            //         fetch_data();  
-            //     }  
-            // });  
+           
           
     }); 
     });       
