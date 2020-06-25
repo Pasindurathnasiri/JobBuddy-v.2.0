@@ -106,5 +106,13 @@ $(document).on('click', '#btn_add', function(){
             });  
         }  
     }); 
+ //Update
+ $(document).on('click', '.btn_update', function(){  
+        var id=$(this).data("id9");  
+            window.location.href ="http://localhost/dashboard/JobBuddy%20v.2.0/stu_update.php?id="+id;
+           
+          
+    }); 
+
     });       
 </script>
