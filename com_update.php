@@ -1,16 +1,10 @@
 <?php require_once('includes/connection.php'); ?>
 <?php require_once('includes/functions.php'); ?>
 <?php
-//Update function
-//if(isset($_POST>0)){
-   // $query = "UPDATE companies SET ComRegID='".$_POST['ComRegID']."',comName='".$_POST['comName']."',district='".$_POST['district']."',contact_No='".$_POST['contact_No']."',email_COM='".$_POST['email_COM']."',dir_Designation='".$_POST['dir_Designation']."',ComAddress='".$_POST['ComAddress']."',dir_firstName='".$_POST['dir_firstName']."',dir_lastName='".$_POST['dir_lastName']."',dir_fullName='".$_POST['dir_fullName']."',dir_initialName='".$_POST['dir_initialName']."',dir_NIC='".$_POST['dir_NIC']."' WHERE ComRegID='".$_POST['ComRegID']."'";
-    //mysqli_query($connection,$query);
-    //$message = "Company Details Upadted Successfully..!";
-
-//}
+//Update Function
 
 
-$result = mysqli_query($connection,"SELECT * FROM companies WHERE comName ='".$_GET['id']."'");
+$result = mysqli_query($connection,"SELECT * FROM companies WHERE ComRegID ='".$_GET['id']."'");
 $row= mysqli_fetch_array($result);
 
 ?>
@@ -35,10 +29,8 @@ $row= mysqli_fetch_array($result);
 <section class="container-fluid">
     <section class="row justify-content-center">
     <section class="col-12 col-sm-6 col-md-10">
-    <form class="form-container justify-content-center col-12 col-sm-6 col-md-10 "  method="post" action="Reg_Com.php" enctype="multipart/form-data">
+    <form class="form-container justify-content-center col-12 col-sm-6 col-md-10 "  method="post" action="com_update_process.php" enctype="multipart/form-data">
     <form class="stuReg">
-    <div><?php if(isset($message)) { echo $message; } ?>
-</div>
 <!-------------------------------------Row 01------------------------------------------------>
 <!--Centre Name-->
     <div class="form-group col-12 col-md-12 col-sm-12">
@@ -167,7 +159,7 @@ $row= mysqli_fetch_array($result);
 <!-------------------------------------Row 13------------------------------------------------>
 <label for="inputNICPhoto">Drop Your Business Registration Certificate</label>
 <div class="custom-file">
-        <input type="file" class="custom-file-input" id="validatedCustomFile" name="com_certificate" value="<?php echo $row['certificate']; ?>"  required>
+        <input type="file" class="custom-file-input" id="validatedCustomFile" name="com_certificate" value="<?php echo $row['email_COM']; ?>"  required>
         <label class="custom-file-label" for="validatedCustomFile">Choose file...</label>
         <div class="invalid-feedback">Example invalid custom file feedback</div>
 </div>
