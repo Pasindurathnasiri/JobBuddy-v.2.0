@@ -48,7 +48,8 @@ $row= mysqli_fetch_array($result);
 <div class="form-row col-md-12">
   <div class="form-group col-md-6">
     <label for="inputDistrict">District</label>
-    <select id="inputDistrict" name="district"value="<?php echo $row['district']; ?>"  class="form-control"required>
+    <select id="inputDistrict" name="district" class="form-control"required>
+     <option selected><?php echo $row['district']; ?></option>
       <option value="Colombo">Colombo</option>
       <option value="Gampaha">Gampaha</option>
       <option value="Kaluthara">Kaluthara</option>
@@ -79,8 +80,9 @@ $row= mysqli_fetch_array($result);
     <div class="form-row col-12 col-md-12 col-sm-12">
 <!--Miss/ Mrs/ Mr-->
         <div class="form-group col-md-2"><br>
-            <select id="StatusVtc" name="dir_Designation" value="<?php echo $row['dir_Designation']; ?>" class="form-control">
-                <option selected>Mr.</option>
+            <select id="StatusVtc" name="dir_Designation" class="form-control">
+                <option selected><?php echo $row['dir_Designation']; ?></option>
+                <option>Mr.</option>
                 <option>Mrs.</option>
                 <option>Miss.</option>
             </select>
