@@ -70,7 +70,7 @@
  {  
       $output .= '
 				<tr>  
-					 <td colspan="4">Data Not Found</td>
+				 <td colspan="4">Data Not Found</td>
                      <td id="first_name" contenteditable></td>  
                      <td id="email" contenteditable></td>
                      <td id="gender" contenteditable></td>
