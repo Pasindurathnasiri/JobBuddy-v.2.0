@@ -46,7 +46,9 @@
                 <td class="edu_level" data_id7="'.$row["NICStu"].'" 
                 contenteditable>'.$row["eduLevelStu"].'</td>
                 <td><button type="button" name="btn_delete" 
-                data-id8="'.$row["NICStu"].'" class="btn btn-xs btn-danger btn_delete">X</button></td>
+                data-id8="'.$row["NICStu"].'" class="btn btn-xs btn-danger btn_delete">X</button>
+                <button type="button" name="btn_update" 
+                data-id9="'.$row["NICStu"].'" class="btn btn-xs btn-primary btn_update">U</button></td>
                   
                 </tr>  
            ';  
